@@ -1,0 +1,42 @@
+/* Basic styles for the poker chart */
+.poker-chart {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.chart {
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.hand {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hand.suit {
+  background-color: lightblue; /* Background color for suited options */
+}
+
+.hand.empty {
+  visibility: hidden;
+}
+
+.hand.active {
+  background-color: yellow; /* Highlight color */
+}
